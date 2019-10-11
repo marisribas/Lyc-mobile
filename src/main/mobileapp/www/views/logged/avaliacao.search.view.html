@@ -6,7 +6,15 @@
 #crn-icon-704645 { 
   color: rgb(255, 255, 255);
 }
-</style>
+
+#crn-list-item-icon9286 { 
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+#crn-heading-768235 { 
+  margin-top: 25px;
+}
+</style> 
 <ion-view cache-view="false" hide-back-button="true" class="pane"> 
   <ion-header-bar class="bar bar-header bar-positive" xattr-theme="bar-positive" data-component="crn-ion-header-bar"> 
     <div side="left" class="buttons buttons-left header-item"> 
@@ -14,24 +22,38 @@
       <button class="button button-clear" ng-if="Avaliacao.inserting || Avaliacao.editing" ng-click="Avaliacao.cancel()" data-component="crn-button" xattr-type="button-clear"> <i class="icon ion-ios-arrow-back"></i> </button> 
     </div> 
     <h1 class="title">{{Turma.active.disciplina}}</h1> 
+    <img src="img/mari.jpg" class="component-holder avatar" style="" xattr-position="" data-component="crn-image" id="crn-image-76076"> 
     <div side="right" class="buttons buttons-right header-item"> 
     </div> 
   </ion-header-bar> 
   <ion-content class="scroll-content has-header" data-component="crn-ion-content"> 
-    
-    
-    <datasource name="Turma" entity="app.Turma" keys="id" rows-per-page="100" on-before-create="" on-after-create="" on-before-update="" on-after-update="" on-before-delete="" on-after-delete="" on-after-fill="" data-component="crn-datasource" class="component-holder" schema="[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;disciplina&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;horario&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;local&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;alunos&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;aulas&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;media&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}]" condition=""></datasource><div class="ng-binding ng-scope style7814" data-component="crn-list-icon" id="crn-list-icon-437908"><div crn-datasource="Turma" ng-repeat="rowData in datasource.data" id="crn-list-icon9286" xattr-text-position="text-left"><a class="item item-icon-left" xattr-position="item-icon-left" data-component="crn-list-item-icon" id="crn-list-item-icon9286" href=""><i class="icon dark fa fa-calendar" xattr-theme="dark"></i><h2 class="dark" xattr-theme="dark">{{rowData.horario}}</h2></a></div></div>
-    <button class="button button-positive component-holder button-block" xattr-fullsize="button-block" xattr-theme="button-positive" ng-click="" data-component="crn-button" id="crn-button-939681" xattr-type=""><i class="fa fa-calendar"></i> <span>{{Turma.active.horario}}</span></button> 
-    <div crn-datasource="Avaliacao" class="col-xs-12" ng-hide="Avaliacao.editing || Avaliacao.inserting"> 
-      <h1 data-component="crn-heading" class="component-holder col-xs-12" id="crn-heading-768235">Notas</h1> 
-      <p xattr-position="text-left" class="component-holder col-xs-12 text-left" data-component="crn-paragraph" id="crn-paragraph-823494">Escolha qual nota você vai lançar abaixo:</p>
-      <div class="component-holder ng-binding ng-scope col-xs-12" data-component="crn-datasource">
-        <datasource name="avaliacao" entity="app.query960928" keys="" rows-per-page="100" on-before-create="" on-after-create="" on-before-update="" on-after-update="" on-before-delete="" on-after-delete="" on-after-fill="" data-component="crn-datasource" id="crn-datasource-96194" schema="[]" condition="" order-by=""></datasource>
-        <div class="component-holder ng-binding ng-scope" data-component="crn-list-avatar" id="crn-list-avatar-356855">
-          <div class="" crn-datasource="avaliacao" ng-repeat="rowData in datasource.data" id="crn-list-avatar5940">
-            <a class="item item-avatar-left text-left" xattr-position="item-avatar-left" xattr-text-position="text-left" data-component="crn-list-item-avatar" id="crn-list-item-avatar-5940"><img src="img/edit2.png" class="component-holder" data-component="crn-image" id="crn-image-5940"><h2 class="dark" xattr-theme="dark">{{rowData.nome}}</h2><h3 class="dark" xattr-theme="dark">{{rowData.descricao}}</h3></a>
-          </div>
-        </div>
+    <datasource name="Turma" entity="app.Turma" keys="id" rows-per-page="100" on-before-create="" on-after-create="" on-before-update="" on-after-update="" on-before-delete="" on-after-delete="" on-after-fill="" data-component="crn-datasource" class="component-holder" schema="[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;disciplina&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;horario&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;local&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;alunos&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;aulas&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;media&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}]" condition=""></datasource> 
+    <div data-replace="false" data-component="crn-container" class="component-holder style7814" id="crn-container-619671"> 
+      <div class="ng-binding ng-scope" data-component="crn-list-icon" id="crn-list-icon-437908"> 
+        <div crn-datasource="Turma" ng-repeat="rowData in datasource.data" id="crn-list-icon9286" xattr-text-position="text-left"> 
+          <a class="item item-icon-left" xattr-position="item-icon-left" data-component="crn-list-item-icon" id="crn-list-item-icon9286" href=""><i class="icon dark fa fa-calendar" xattr-theme="dark"></i><h2 class="dark" xattr-theme="dark">{{rowData.horario}}</h2><h2 class="dark" xattr-theme="dark">{{rowData.local}}</h2></a> 
+        </div> 
+      </div> 
+      <div class="ng-binding ng-scope remove-padding background-color-default style123" data-component="crn-button-bar" id="crn-button-bar-425010"> 
+        <div class="button-bar"> 
+          <!--<span class="button button-block" data-component="crn-button" type="submit" ng-click="" xattr-size="" xattr-type="" xattr-theme="button-dark" xattr-fullsize="button-block"><span>{{Turma.active.alunos}}</span></span> --> 
+          <!--<span class="button button-block" data-component="crn-button" type="submit" ng-click="" xattr-size="" xattr-type="" xattr-theme="button-dark" xattr-fullsize="button-block"><p>Alunos</p><p>{{Turma.active.alunos}}</p></span> --> 
+          <span class="button button-block" data-component="crn-button" type="submit" ng-click="" xattr-size="" xattr-type="" xattr-theme="button-dark" xattr-fullsize="button-block"><span>Alunos</span><br><span class="info">{{Turma.active.alunos}}</span></span> 
+          <span class="button button-block" data-component="crn-button" type="submit" ng-click="" xattr-size="" xattr-type="" xattr-theme="button-dark" xattr-fullsize="button-block"><span>Aulas dadas</span><br><span class="info">{{Turma.active.aulas}}</span></span> 
+          <span class="button button-block" data-component="crn-button" type="submit" ng-click="" xattr-size="" xattr-type="" xattr-theme="button-dark" xattr-fullsize="button-block"><span>Média geral</span><br><span class="info">{{Turma.active.media}}</span></span> 
+        </div> 
+      </div> 
+    </div> 
+    <div crn-datasource="Avaliacao" class="col-xs-12 remove-padding" ng-hide="Avaliacao.editing || Avaliacao.inserting"> 
+      <h3 data-component="crn-heading" class="component-holder col-xs-12" id="crn-heading-768235">Notas</h3> 
+      <p xattr-position="text-left" class="component-holder col-xs-12 text-left" data-component="crn-paragraph" id="crn-paragraph-823494">Escolha qual nota você vai lançar abaixo:</p> 
+      <div class="component-holder ng-binding ng-scope col-xs-12" data-component="crn-datasource"> 
+        <datasource name="avaliacao" entity="app.query960928" keys="" rows-per-page="100" on-before-create="" on-after-create="" on-before-update="" on-after-update="" on-before-delete="" on-after-delete="" on-after-fill="" data-component="crn-datasource" id="crn-datasource-96194" schema="[]" condition="" order-by=""></datasource> 
+        <div class="component-holder ng-binding ng-scope" data-component="crn-list-avatar" id="crn-list-avatar-356855"> 
+          <div class="" crn-datasource="avaliacao" ng-repeat="rowData in datasource.data" id="crn-list-avatar5940"> 
+            <a class="item item-avatar-left text-left" xattr-position="item-avatar-left" xattr-text-position="text-left" data-component="crn-list-item-avatar" id="crn-list-item-avatar-5940"><img src="img/edit2.png" class="component-holder" data-component="crn-image" id="crn-image-5940"><h2 class="dark" xattr-theme="dark">{{rowData.nome}}</h2><h3 class="dark" xattr-theme="dark">{{rowData.descricao}}</h3></a> 
+          </div> 
+        </div> 
       </div> 
     </div> 
   </ion-content> 

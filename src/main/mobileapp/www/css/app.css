@@ -1,14 +1,77 @@
+.bar.bar-positive {
+  border: none !important;
+}
+
+.bar-header .avatar {
+  width: 50px;
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  width: 35px;
+  border-radius: 50%;
+  height: 35px;
+}
+
 ion-content button {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .style9969 { 
-  background-color: rgb(0, 128, 255);
+  background-color: rgb(0, 128, 255) !important;
   padding: 0px;
 }
 
-.style7814 { 
-  padding: 2px 0px;
+.background-color-default {
   background-color: rgb(56, 126, 245);
+}
+
+.style7814 { 
+  background-color: rgb(56, 126, 245);
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.style7814 h2 {
+  margin-left: 10px;
+}
+
+.style7814 h2,
+.style7814 a,
+.style7814 i {
+  color: #fff;
+  border: none !important;
+}
+
+.style7814 .icon {
+  font-size: 40px;
+}
+
+.style7814 span {
+  margin: 0 !important;
+}
+
+.remove-padding {
+  padding: 0;
+}
+
+.style7814 .button {
+  background-color: #0000;
+  cursor: auto !important;
+  color: #fff;
+  line-height: 15px;
+}
+
+.style7814 .button span {
+  font-size: .7em;
+}
+
+.style7814 .button span.info {
+  font-weight: bold;
+}
+
+.style123 {
+  margin: 10px;
 }
