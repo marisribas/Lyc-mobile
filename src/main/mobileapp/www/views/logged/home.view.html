@@ -1,0 +1,13 @@
+<ion-view class="pane">
+  <ion-header-bar align-title="center" class="bar bar-positive" data-component="crn-ion-header-bar">
+    <div class="buttons buttons-left header-item">
+      <button class="button button-clear" menu-toggle="left" data-component="crn-button" xattr-type="button-clear"> <i class="icon ion-navicon"></i> </button>
+    </div>
+    <h1 class="title">Turmas</h1>
+    <div class="buttons buttons-right header-item">
+      
+    </div>
+  </ion-header-bar>
+  <ion-content class="scroll-content has-header" data-component="crn-ion-content">
+  <datasource name="Turma" entity="app.Turma" keys="id" rows-per-page="100" on-before-create="" on-after-create="" on-before-update="" on-after-update="" on-before-delete="" on-after-delete="" on-after-fill="" data-component="crn-datasource" class="component-holder" schema="[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;disciplina&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;horario&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;local&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;alunos&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;aulas&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;media&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}]" condition=""></datasource><div class="component-holder ng-binding ng-scope" data-component="crn-list-avatar" id="crn-list-avatar-837829"><div class="" crn-datasource="Turma" ng-repeat="rowData in datasource.data" id="crn-list-avatar8572"><a class="item item-avatar-left text-left" xattr-position="item-avatar-left" xattr-text-position="text-left" data-component="crn-list-item-avatar" id="crn-list-item-avatar-8572" ng-click="cronapi.screen.changeView('#/app/logged/avaliacao.search', [])"><img src="img/nophoto.png" class="component-holder" data-component="crn-image" id="crn-image-8572"><h2 class="dark" xattr-theme="dark">{{Turma.active.disciplina}}</h2><h3 class="dark" xattr-theme="dark">{{rowData.horario}}</h3></a></div></div></ion-content>
+</ion-view>

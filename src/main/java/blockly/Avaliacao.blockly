@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly formTarget="" resourceType="JAVA" ruleDescription="Avaliacao" ruleName="Avaliacao" ruleSynchronous="false" ruleTimeout="" ruleType="I">
+  <metadata scale="1" scrollx="491.0000000000011" scrolly="-23.999999999999957" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <block colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-397" y="68">
+    <field name="NAME">ObterDados</field>
+    <comment h="80" pinned="false" w="160">Avaliacao</comment>
+    <statement name="STACK">
+      <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="=FYU%KCZZt1z?xDD:!8R" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+        <field name="VAR">Dados</field>
+        <value name="VALUE">
+          <block colour="#745ba5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="|Un~JXp!}AlXxJlrIg0k" origintype="lists_create_with" output="true" tooltip="Cria uma lista com a quantidade de itens informada." type="lists_create_with">
+            <mutation items="0"/>
+          </block>
+        </value>
+        <next>
+          <block collapsed="true" colour="#745ba5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="kMa6e_29KCit((a?Pgru" origintype="lists_setIndex" output="false" tooltip="function() {&#10;      var mode = thisBlock.getFieldValue('MODE');&#10;      var where = thisBlock.getFieldValue('WHERE');&#10;      var tooltip = '';&#10;      switch(mode + ' ' + where) {&#10;      case 'SET FROM_START':&#10;      case 'SET FROM_END':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_SET_FROM;&#10;        break;&#10;      case 'SET FIRST':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_SET_FIRST;&#10;        break;&#10;      case 'SET LAST':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_SET_LAST;&#10;        break;&#10;      case 'SET RANDOM':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_SET_RANDOM;&#10;        break;&#10;      case 'INSERT FROM_START':&#10;      case 'INSERT FROM_END':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_FROM;&#10;        break;&#10;      case 'INSERT FIRST':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_FIRST;&#10;        break;&#10;      case 'INSERT LAST':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_LAST;&#10;        break;&#10;      case 'INSERT RANDOM':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_RANDOM;&#10;        break;&#10;      }&#10;      if(where == 'FROM_START' || where == 'FROM_END') {&#10;        tooltip += '  ' + Blockly.Msg.LISTS_INDEX_FROM_START_TOOLTIP.replace('%1', thisBlock.workspace.options.oneBasedIndex ? '#1' : '#0');&#10;      }&#10;      return tooltip;&#10;    }" type="lists_setIndex">
+            <mutation at="false"/>
+            <field name="MODE">INSERT</field>
+            <field name="WHERE">LAST</field>
+            <value name="LIST">
+              <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="j3XVJlZ6c9xc;S[4hZKQ" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                <field name="VAR">Dados</field>
+              </block>
+            </value>
+            <value name="TO">
+              <block colour="#917731" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="dBFf!#rmD=cbWi3Rn$d3" multilayer="false" namespace="cronapi.map.Operations.createObjectMapWith" origintype="maps_create_with" output="true" returntype="ObjectType.MAP" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ECriar%20objeto%20mapa%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20objeto%20mapa%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Valor(es)%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Valores%20a%20serem%20adicionados%20na%20cria%C3%A7%C3%A3o%20do%20mapa%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Mapa%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.map.Operations.createObjectMapWith%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.map.Operations.createObjectMapWith%3C/a%3E%3C/div%3E%3C/div%3E" type="maps_create_with">
+                <mutation name="{{cronapi.map.Operations.createObjectMapWith}}">
+                  <arg name="id"/>
+                  <arg name="nome"/>
+                  <arg name="descricao"/>
+                  <arg name="fk_turma"/>
+                  <arg name="ordem"/>
+                </mutation>
+                <value name="ARG0">
+                  <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="`OjCOP/R:Vrf*fvrd0~@" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field name="TEXT">1</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="=uz4wlhZ^*MmJ#HG?InB" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field name="TEXT">P1</field>
+                  </block>
+                </value>
+                <value name="ARG2">
+                  <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Qz)R5mu.WK?6I,~4Wv;2" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field name="TEXT">Notas de provas do primeiro semestre</field>
+                  </block>
+                </value>
+                <value name="ARG3">
+                  <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="$.j[Vr?1]8aTsfbr#j+`" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field name="TEXT">E0E72A66-667A-4C00-B642-E73B9A074DAE	</field>
+                  </block>
+                </value>
+                <value name="ARG4">
+                  <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="E:sxIU7/hu(`A_Fbh$}i" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field name="TEXT">1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block collapsed="true" colour="#745ba5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="?-XH~3LjGwey:o)YtrC?" origintype="lists_setIndex" output="false" tooltip="function() {&#10;      var mode = thisBlock.getFieldValue('MODE');&#10;      var where = thisBlock.getFieldValue('WHERE');&#10;      var tooltip = '';&#10;      switch(mode + ' ' + where) {&#10;      case 'SET FROM_START':&#10;      case 'SET FROM_END':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_SET_FROM;&#10;        break;&#10;      case 'SET FIRST':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_SET_FIRST;&#10;        break;&#10;      case 'SET LAST':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_SET_LAST;&#10;        break;&#10;      case 'SET RANDOM':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_SET_RANDOM;&#10;        break;&#10;      case 'INSERT FROM_START':&#10;      case 'INSERT FROM_END':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_FROM;&#10;        break;&#10;      case 'INSERT FIRST':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_FIRST;&#10;        break;&#10;      case 'INSERT LAST':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_LAST;&#10;        break;&#10;      case 'INSERT RANDOM':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_RANDOM;&#10;        break;&#10;      }&#10;      if(where == 'FROM_START' || where == 'FROM_END') {&#10;        tooltip += '  ' + Blockly.Msg.LISTS_INDEX_FROM_START_TOOLTIP.replace('%1', thisBlock.workspace.options.oneBasedIndex ? '#1' : '#0');&#10;      }&#10;      return tooltip;&#10;    }" type="lists_setIndex">
+                <mutation at="false"/>
+                <field name="MODE">INSERT</field>
+                <field name="WHERE">LAST</field>
+                <value name="LIST">
+                  <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="-H;T)({tz*[I!LWuvxM." origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">Dados</field>
+                  </block>
+                </value>
+                <value name="TO">
+                  <block colour="#917731" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="zc`s`Lv%MkDO]DxRi4Hh" multilayer="false" namespace="cronapi.map.Operations.createObjectMapWith" origintype="maps_create_with" output="true" returntype="ObjectType.MAP" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ECriar%20objeto%20mapa%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20objeto%20mapa%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Valor(es)%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Valores%20a%20serem%20adicionados%20na%20cria%C3%A7%C3%A3o%20do%20mapa%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Mapa%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.map.Operations.createObjectMapWith%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.map.Operations.createObjectMapWith%3C/a%3E%3C/div%3E%3C/div%3E" type="maps_create_with">
+                    <mutation name="{{cronapi.map.Operations.createObjectMapWith}}">
+                      <arg name="id"/>
+                      <arg name="nome"/>
+                      <arg name="descricao"/>
+                      <arg name="fk_turma"/>
+                      <arg name="ordem"/>
+                    </mutation>
+                    <value name="ARG0">
+                      <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Zz)~gPkUmT?$|g[`Qp|I" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                        <field name="TEXT">2</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="vFjOph=)2$-,w!$mDIwc" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                        <field name="TEXT">P2</field>
+                      </block>
+                    </value>
+                    <value name="ARG2">
+                      <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="}y+#xT3=slRSi1K8-kAp" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                        <field name="TEXT">Notas de provas do segundo semestre</field>
+                      </block>
+                    </value>
+                    <value name="ARG3">
+                      <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="GDJjCa0OQ:F{]Y|~-]M}" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                        <field name="TEXT">E0E72A66-667A-4C00-B642-E73B9A074DAE	</field>
+                      </block>
+                    </value>
+                    <value name="ARG4">
+                      <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="a?HT@gp_9iVgm*`(F!Hc" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                        <field name="TEXT">2</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block collapsed="true" colour="#745ba5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="3]B4PVxzra;{{YYG5R:~" origintype="lists_setIndex" output="false" tooltip="function() {&#10;      var mode = thisBlock.getFieldValue('MODE');&#10;      var where = thisBlock.getFieldValue('WHERE');&#10;      var tooltip = '';&#10;      switch(mode + ' ' + where) {&#10;      case 'SET FROM_START':&#10;      case 'SET FROM_END':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_SET_FROM;&#10;        break;&#10;      case 'SET FIRST':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_SET_FIRST;&#10;        break;&#10;      case 'SET LAST':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_SET_LAST;&#10;        break;&#10;      case 'SET RANDOM':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_SET_RANDOM;&#10;        break;&#10;      case 'INSERT FROM_START':&#10;      case 'INSERT FROM_END':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_FROM;&#10;        break;&#10;      case 'INSERT FIRST':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_FIRST;&#10;        break;&#10;      case 'INSERT LAST':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_LAST;&#10;        break;&#10;      case 'INSERT RANDOM':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_RANDOM;&#10;        break;&#10;      }&#10;      if(where == 'FROM_START' || where == 'FROM_END') {&#10;        tooltip += '  ' + Blockly.Msg.LISTS_INDEX_FROM_START_TOOLTIP.replace('%1', thisBlock.workspace.options.oneBasedIndex ? '#1' : '#0');&#10;      }&#10;      return tooltip;&#10;    }" type="lists_setIndex">
+                    <mutation at="false"/>
+                    <field name="MODE">INSERT</field>
+                    <field name="WHERE">LAST</field>
+                    <value name="LIST">
+                      <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="X=2V3Cd*v_23OV.+|R4*" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">Dados</field>
+                      </block>
+                    </value>
+                    <value name="TO">
+                      <block colour="#917731" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="0Xpdxn%+6j=|w`}tm$A?" multilayer="false" namespace="cronapi.map.Operations.createObjectMapWith" origintype="maps_create_with" output="true" returntype="ObjectType.MAP" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ECriar%20objeto%20mapa%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20objeto%20mapa%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Valor(es)%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Valores%20a%20serem%20adicionados%20na%20cria%C3%A7%C3%A3o%20do%20mapa%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Mapa%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.map.Operations.createObjectMapWith%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.map.Operations.createObjectMapWith%3C/a%3E%3C/div%3E%3C/div%3E" type="maps_create_with">
+                        <mutation name="{{cronapi.map.Operations.createObjectMapWith}}">
+                          <arg name="id"/>
+                          <arg name="nome"/>
+                          <arg name="descricao"/>
+                          <arg name="fk_turma"/>
+                          <arg name="ordem"/>
+                        </mutation>
+                        <value name="ARG0">
+                          <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="hYgjY/,a49rd!~OUK}2s" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                            <field name="TEXT">3</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="e^L/stD7f!gp7|!Qdj$B" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                            <field name="TEXT">EX</field>
+                          </block>
+                        </value>
+                        <value name="ARG2">
+                          <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="h+x/8_[Sx.e[^wA$JU5m" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                            <field name="TEXT">Notas de recuperação</field>
+                          </block>
+                        </value>
+                        <value name="ARG3">
+                          <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="aa3(*x6EI?i_L5?aI*mE" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                            <field name="TEXT">E0E72A66-667A-4C00-B642-E73B9A074DAE	</field>
+                          </block>
+                        </value>
+                        <value name="ARG4">
+                          <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="B@N/{Pvbjrv{#Fun~)jH" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                            <field name="TEXT">3</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block collapsed="true" colour="#745ba5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="(DeMpSyrOq-DJ#2bR5`d" origintype="lists_setIndex" output="false" tooltip="function() {&#10;      var mode = thisBlock.getFieldValue('MODE');&#10;      var where = thisBlock.getFieldValue('WHERE');&#10;      var tooltip = '';&#10;      switch(mode + ' ' + where) {&#10;      case 'SET FROM_START':&#10;      case 'SET FROM_END':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_SET_FROM;&#10;        break;&#10;      case 'SET FIRST':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_SET_FIRST;&#10;        break;&#10;      case 'SET LAST':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_SET_LAST;&#10;        break;&#10;      case 'SET RANDOM':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_SET_RANDOM;&#10;        break;&#10;      case 'INSERT FROM_START':&#10;      case 'INSERT FROM_END':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_FROM;&#10;        break;&#10;      case 'INSERT FIRST':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_FIRST;&#10;        break;&#10;      case 'INSERT LAST':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_LAST;&#10;        break;&#10;      case 'INSERT RANDOM':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_RANDOM;&#10;        break;&#10;      }&#10;      if(where == 'FROM_START' || where == 'FROM_END') {&#10;        tooltip += '  ' + Blockly.Msg.LISTS_INDEX_FROM_START_TOOLTIP.replace('%1', thisBlock.workspace.options.oneBasedIndex ? '#1' : '#0');&#10;      }&#10;      return tooltip;&#10;    }" type="lists_setIndex">
+                        <mutation at="false"/>
+                        <field name="MODE">INSERT</field>
+                        <field name="WHERE">LAST</field>
+                        <value name="LIST">
+                          <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="4t;[JM_eBQ)RG|O7Tnps" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">Dados</field>
+                          </block>
+                        </value>
+                        <value name="TO">
+                          <block colour="#917731" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="uItH!!eT!Upq%EtG^w_)" multilayer="false" namespace="cronapi.map.Operations.createObjectMapWith" origintype="maps_create_with" output="true" returntype="ObjectType.MAP" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ECriar%20objeto%20mapa%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20objeto%20mapa%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Valor(es)%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Valores%20a%20serem%20adicionados%20na%20cria%C3%A7%C3%A3o%20do%20mapa%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Mapa%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.map.Operations.createObjectMapWith%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.map.Operations.createObjectMapWith%3C/a%3E%3C/div%3E%3C/div%3E" type="maps_create_with">
+                            <mutation name="{{cronapi.map.Operations.createObjectMapWith}}">
+                              <arg name="id"/>
+                              <arg name="nome"/>
+                              <arg name="descricao"/>
+                              <arg name="fk_turma"/>
+                              <arg name="ordem"/>
+                            </mutation>
+                            <value name="ARG0">
+                              <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="nvgG(/8t?mu;zf|C0ayQ" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                <field name="TEXT">4</field>
+                              </block>
+                            </value>
+                            <value name="ARG1">
+                              <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Iq?5lOQ2sW:[dR-uLTIb" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                <field name="TEXT">Média</field>
+                              </block>
+                            </value>
+                            <value name="ARG2">
+                              <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id=";5rb1;f1^^H[*,Cm3CjN" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                <field name="TEXT">Consulte aqui a média de cada aluno</field>
+                              </block>
+                            </value>
+                            <value name="ARG3">
+                              <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="XgA}o-Au0K,ow4wuKsi(" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                <field name="TEXT">E0E72A66-667A-4C00-B642-E73B9A074DAE	</field>
+                              </block>
+                            </value>
+                            <value name="ARG4">
+                              <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="_A)SPQ|?a2D)~:!vu.rr" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                <field name="TEXT">4</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block colour="#5ba58c" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="7vL1B;(oo/^D-NjPRU}%" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
+                            <value name="TEXT">
+                              <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="vnUn,T4OH0EMH4V5Q~1:" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                <field name="TEXT">abc</field>
+                              </shadow>
+                              <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="3zcf}L8K^vq;}i/~q[F." origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field name="VAR">Dados</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block colour="#4f7ba8" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Yh/jhb2avl{Z`v!8dEVN" multilayer="false" namespace="cronapi.json.Operations.toJson" origintype="procedures_callreturn" output="true" returntype="ObjectType.JSON" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EPara%20Json%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20converter%20Texto%20ou%20Arquivo%20para%20Json%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Valor%20a%20ser%20lido%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Texto%20ou%20Arquivo%20(Retorno%20da%20fun%C3%A7%C3%A3o%20%22Abrir%20arquivo%20para%20leitura%22)%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Json%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.json.Operations.toJson%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.json.Operations.toJson%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+        <mutation name="{{cronapi.json.Operations.toJson}}" return-raw-type="cronapi.Var">
+          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.OBJECT" name="Valor a ser lido"/>
+        </mutation>
+        <value name="ARG0">
+          <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="=~uRh4^EVMGa`igM?VTT" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+            <field name="VAR">Dados</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+</blockly>
